@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: //add key,
+    authDomain: //add auth,
+    databaseURL: //add database,
+    projectId: //add project,
+    storageBucket: //add storage,
+    messagingSenderId: //add message,
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="test.js"></script>
+</head>
+<body>
+<div id="user">
+<input text="email" placeholder="Email" id="email"><br>
+<input text="password" placeholder="Password" id="pass"><br>
+<button onclick="login()">Submit</button><br>
+<button onclick="create()">Register</button><br>
+</div>
+
+<div id="log">
+<h1 id="para">Welcome user</h1>
+<button onclick="logout()">Logout</button>
+</div>
+
+</body>
+</html>
